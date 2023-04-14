@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrytador Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script defer src="./src/js/app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__img" src="./src/img/logo.svg" alt="" />
+    </header>
+    <form class="form container">
+      <textarea
+        class="form__textarea"
+        placeholder="Ingrese el texto aqui"
+      ></textarea>
+      <div class="wrapper-btn">
+        <div class="wrapper-btn__warning">
+          <img src="./src/img/icon.svg" alt="icon warning" />
+          <span class="warning">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="wrapper-buttons">
+          <button class="btn btn-primary" type="submit" id="encrypt">
+            Encriptar
+          </button>
+          <button class="btn btn-secondary" type="submit" id="unencrypt">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+    </form>
+    <section class="output container">
+      <img class="output-img" src="./src/img/Muñeco.svg" alt="" />
+      <article class="message">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </article>
+      <p class="message-output oculto"></p>
+      <div class="btn btn-secondary oculto copiar">Copiar</div>
+    </section>
+
+    <div class="modal ocultar">
+      <div class="modal__text">
+        <span class="modal__img">
+          <img src="./src/img/icon.svg" alt="warning icon" />
+        </span>
+        <span class="modal__mensaje"> </span>
+      </div>
+    </div>
+  </body>
+</html>
